@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <a  class="text-lg font-bold">Create Your Product</a>
+      <a href="./product/product.html" class="text-lg">View Products</a>
+    </div>
+  </nav>
+
+  <div class="flex-grow flex items-center justify-center py-8 px-6">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+      <h1 class="text-2xl font-semibold text-gray-700 mb-6 text-center">Add Product</h1>
+      <div class="space-y-4">
+        <div>
+          <label for="productTitle" class="block text-gray-600 font-medium">Product Title</label>
+          <input type="text" id="productTitle" placeholder="Product Title" class="mt-1 p-2 border border-gray-300 rounded w-full">
+        </div>
+        <div>
+          <label for="productPrice" class="block text-gray-600 font-medium">Product Price</label>
+          <input type="text" id="productPrice" placeholder="Product Price" class="mt-1 p-2 border border-gray-300 rounded w-full">
+        </div>
+        <div>
+          <label for="productDescription" class="block text-gray-600 font-medium">Product Description</label>
+          <textarea id="productDescription" placeholder="Product Description" class="mt-1 p-2 border border-gray-300 rounded w-full resize-y"></textarea>
+        </div>
+        <div>
+          <label for="productImg" class="block text-gray-600 font-medium">Product Image URL</label>
+          <input type="text" id="productImg" placeholder="Product Image URL" class="mt-1 p-2 border border-gray-300 rounded w-full">
+        </div>
+        <button onclick="addProduct()" class="w-full py-3 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+    
+  </body>
+  </html>
